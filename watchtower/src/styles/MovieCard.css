@@ -1,0 +1,26 @@
+.movie-card {
+  background: linear-gradient(180deg, #ff7eb9, #ff758c);
+  border-radius: 12px;
+  overflow: hidden;
+  width: 200px;
+  text-align: center;
+  transition: transform 0.3s;
+  display: flex;
+  flex-direction: column;
+  color: white;
+  text-decoration: none;
+}
+
+.movie-card img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+
+.movie-card h3 {
+  margin: 0.5rem 0;
+}
+
+.movie-card:hover {
+  transform: scale(1.05);
+}

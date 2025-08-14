@@ -1,0 +1,16 @@
+.featured-movies {
+  padding: 2rem;
+  background: #fff;
+  color: #1d1d1d;
+}
+
+.featured-movies h2 {
+  margin-bottom: 1rem;
+  color: #e63946;
+}
+
+.featured-movies .grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 1.5rem;
+}

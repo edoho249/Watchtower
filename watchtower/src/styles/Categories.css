@@ -1,0 +1,32 @@
+.categories {
+  padding: 2rem;
+  background: #f9f9f9;
+  color: #1d1d1d;
+}
+
+.categories h2 {
+  color: #e63946;
+  margin-bottom: 1rem;
+}
+
+.category-list {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.category-card {
+  background: #fff;
+  padding: 1rem 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.category-card:hover {
+  background: #e63946;
+  color: white;
+  transform: scale(1.05);
+}

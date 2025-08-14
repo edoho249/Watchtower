@@ -1,0 +1,22 @@
+.search-bar {
+  padding: 2rem;
+  background: linear-gradient(180deg, #00c6ff, #0072ff);
+  min-height: 100vh;
+  color: white;
+}
+
+.search-bar input {
+  width: 100%;
+  padding: 1rem;
+  margin-bottom: 2rem;
+  border: none;
+  border-radius: 12px;
+  font-size: 1rem;
+}
+
+.movies-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 1.5rem;
+  justify-items: center;
+}

@@ -1,0 +1,261 @@
+.about-page {
+  background-color: #141414;
+  color: white;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Intersection Observer Animations */
+.hidden {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 0.8s ease-out;
+}
+
+.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Hero Section */
+.about-hero {
+  height: 70vh;
+  background: url('/about-hero.jpg') center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+}
+
+.about-hero::after {
+  content: '';
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(0,0,0,0.6);
+}
+
+.hero-overlay {
+  position: relative;
+  z-index: 2;
+}
+
+.hero-overlay h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.hero-overlay p {
+  font-size: 1.2rem;
+}
+
+/* Company Story */
+.company-story {
+  max-width: 900px;
+  margin: 3rem auto;
+  text-align: center;
+  padding: 0 1rem;
+}
+
+.company-story h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.company-story p {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+/* Team Section */
+.team-section {
+  padding: 3rem 1rem;
+  text-align: center;
+}
+
+.team-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+}
+
+.team-cards {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.team-card {
+  background: #1e1e1e;
+  padding: 1.5rem;
+  border-radius: 12px;
+  width: 250px;
+  transition: transform 0.3s;
+}
+
+.team-card:hover {
+  transform: translateY(-10px);
+}
+
+.team-photo {
+  width: 100%;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+}
+
+.team-card h3 {
+  margin-bottom: 0.5rem;
+}
+
+.team-card p {
+  color: #bbbbbb;
+}
+
+/* Values Section */
+.values-section {
+  padding: 3rem 1rem;
+  text-align: center;
+}
+
+.values-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+}
+
+.values-cards {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.value-card {
+  background: #1e1e1e;
+  padding: 1.5rem;
+  border-radius: 12px;
+  width: 250px;
+  transition: transform 0.3s;
+}
+
+.value-card:hover {
+  transform: translateY(-10px);
+}
+
+.value-card h3 {
+  margin-bottom: 1rem;
+}
+
+.value-card p {
+  color: #bbbbbb;
+}
+
+/* Join Watchtower Form */
+.join-form {
+  margin: 3rem auto;
+  max-width: 500px;
+  text-align: center;
+}
+
+.join-form h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.join-form p {
+  font-size: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.form-wrapper {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.form-wrapper input {
+  flex: 1 1 60%;
+  padding: 12px 15px;
+  border-radius: 6px;
+  border: none;
+  font-size: 1rem;
+}
+
+.form-wrapper button {
+  padding: 12px 20px;
+  border-radius: 6px;
+  border: none;
+  background-color: #e50914;
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.form-wrapper button:hover {
+  background-color: #b0060f;
+}
+
+/* Footer */
+.footer {
+  background: #1a1a1a;
+  padding: 3rem 1rem;
+  color: #bbbbbb;
+}
+
+.footer-top h2 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+  text-align: center;
+}
+
+.footer-top p {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+  flex-wrap: wrap;
+  margin-bottom: 2rem;
+}
+
+.footer-links div h4 {
+  margin-bottom: 1rem;
+  color: white;
+}
+
+.footer-links div p {
+  margin: 0.3rem 0;
+  cursor: pointer;
+}
+
+.footer-links div p:hover {
+  color: white;
+}
+
+.footer-bottom {
+  text-align: center;
+  font-size: 0.9rem;
+  color: #888;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .team-cards, .values-cards, .footer-links {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .form-wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .form-wrapper input, .form-wrapper button {
+    width: 100%;
+  }
+}
